@@ -61,7 +61,7 @@ const commands = [
     },
     {
         name: 'say',
-        description: '- Kiírja a bot amint megadsz neki.',
+        description: '- Kiírja a bot amit megadsz neki.',
         options: [
             {
                 name: 'message',
