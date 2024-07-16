@@ -95,7 +95,7 @@ client.on('interactionCreate', async (interaction) => {
                     .setDescription(`A hibajegy rendszer sikeresen elmentve az adatbázisba, a következő értékekkel: \n\nCsatorna: ${channel}\nÜzenet: ${message}\nRang: ${role}`)
                     .setColor(require('./config.json').color)
                     .setTimestamp()
-                    .setFooter({ text: 'Made by: sarkyyy__', iconURL: client.user.displayAvatarURL() })
+                    .setFooter({ text: 'Made by: sarkydev', iconURL: client.user.displayAvatarURL() })
 
                 await db.set('ticket.channel', channel.id);
                 await db.set('ticket.message', message);
