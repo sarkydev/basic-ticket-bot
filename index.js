@@ -1,6 +1,6 @@
 /*
 
-- AUTHOR: sarkyyy__
+- AUTHOR: sarkydev
 - WEBSITE: https://sarky.netlify.app
 - DATE: 2024.04.07
 
@@ -126,7 +126,7 @@ client.on('interactionCreate', async (interaction) => {
                     .setDescription(message)
                     .setColor(require('./config.json').color)
                     .setTimestamp()
-                    .setFooter({ text: 'Made by: sarkyyy__', iconURL: client.user.displayAvatarURL() })
+                    .setFooter({ text: 'Made by: sarkydev', iconURL: client.user.displayAvatarURL() })
 
                 await channel.send({ embeds: [embed], components: [row] })
                 await interaction.reply({ content: `A hibajegy panel elküldve a ${channel} csatornába!`, ephemeral: true })
@@ -168,7 +168,7 @@ client.on('interactionCreate', async (interaction) => {
                 .setDescription(`Várj türelmesen míg egy ${interaction.guild.roles.cache.get(role)} fel nem figyel rád!`)
                 .setColor(require('./config.json').color)
                 .setTimestamp()
-                .setFooter({ text: 'Made by: sarkyyy__', iconURL: client.user.displayAvatarURL() })
+                .setFooter({ text: 'Made by: sarkydev', iconURL: client.user.displayAvatarURL() })
 
             await tickets.push(interaction.user.id);
             await db.set('tickets', tickets);
